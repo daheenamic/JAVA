@@ -9,7 +9,7 @@ public class SumExample {
 		// 위의 코드를 한 줄로 요약
 		System.out.println(addArray(new int[] {100, 200}));
 		System.out.println(addVars(100,200,300));
-//		System.out.println(addArray(addArray(100,200,300));
+//		System.out.println(addVars(addArray(100,200,300));
 //		에러. addArray의 리턴 타입은 배열이고, addVars의 리턴타입은 int라서 리턴 타입이 달라서 오류가 난다
 }
 		
