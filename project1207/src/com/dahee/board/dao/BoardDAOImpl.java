@@ -14,25 +14,25 @@ public class BoardDAOImpl implements BoardDAO {
 
 	@Override
 	public BoardVO view(Long no) {
-		// TODO Auto-generated method stub
+		System.out.println("BoardDATOImpl.view().........");
 		return null;
 	}
 
 	@Override
 	public Integer write(BoardVO vo) {
-		// TODO Auto-generated method stub
+		System.out.println("BoardDATOImpl.write().........");
 		return null;
 	}
 
 	@Override
 	public Integer update(BoardVO vo) {
-		// TODO Auto-generated method stub
+		System.out.println("BoardDATOImpl.update().........");
 		return null;
 	}
 
 	@Override
 	public Integer delete(Long no) {
-		// TODO Auto-generated method stub
+		System.out.println("BoardDATOImpl.delete().........");
 		return null;
 	}
 

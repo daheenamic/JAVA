@@ -7,7 +7,7 @@ import com.dahee.board.dao.BoardDAOImpl;
 import com.dahee.board.vo.BoardVO;
 import com.dahee.main.ServiceInterface;
 
-public class BoardServiceImpl implements ServiceInterface{
+public class BoardListServiceImpl implements ServiceInterface{
 
 	@Override
 	public List<BoardVO> service(Object obj) {

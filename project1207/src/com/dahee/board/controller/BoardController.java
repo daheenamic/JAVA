@@ -1,6 +1,10 @@
 package com.dahee.board.controller;
 
-import com.dahee.board.service.BoardServiceImpl;
+import com.dahee.board.service.BoardDeleteServiceImpl;
+import com.dahee.board.service.BoardListServiceImpl;
+import com.dahee.board.service.BoardUpdateServiceImpl;
+import com.dahee.board.service.BoardViewServiceImpl;
+import com.dahee.board.service.BoardWriteServiceImpl;
 import com.dahee.main.Execute;
 import com.dahee.main.Main;
 
@@ -18,22 +22,22 @@ public class BoardController {
 			
 			switch (menu) {
 			case "1" : // 게시판 리스트 처리
-				Execute.run(new BoardServiceImpl(), null);
+				Execute.run(new BoardListServiceImpl(), null);
 				break;
 			case "2" : // 게시판 보기
+				Execute.run(new BoardViewServiceImpl(), 2L);
 				//생성해서 호출할 수 있도록 전달한다.
 				break;
 			case "3" : // 게시판 등록
-				//생성해서 호출할 수 있도록 전달한다.
+				Execute.run(new BoardWriteServiceImpl(), null);
 				break;
 			case "4" : // 게시판 수정
-				//생성해서 호출할 수 있도록 전달한다.
+				Execute.run(new BoardUpdateServiceImpl(), null);
 				break;
 			case "5" : // 게시판 삭제
-				//생성해서 호출할 수 있도록 전달한다.
+				Execute.run(new BoardDeleteServiceImpl(), 2L);
 				break;
 			case "0" : // 이전메뉴
-				//생성해서 호출할 수 있도록 전달한다.
 				System.out.println("\n 이전메뉴로 돌아갑니다.");
 				return;
 			default :
